@@ -1,0 +1,40 @@
+.footer {
+  background-color: #8b4513; /* màu nâu */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #fff;
+}
+
+.footer-logo-img {
+  height: 90px; /* chỉnh gọn logo */
+  width: auto;
+  border-radius: 80px; /* bo góc logo */
+}
+
+.footer-links a {
+  font-weight: 500;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #7a3e0f; /* nâu đậm hơn */
+}

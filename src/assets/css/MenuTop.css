@@ -1,0 +1,26 @@
+.menu-top {
+  background-color: #8b4513; /* màu nâu tiệm sách */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-top .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-top .menu-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu-top .menu-links a:hover {
+  color: #ffd700; /* vàng khi hover */
+}
