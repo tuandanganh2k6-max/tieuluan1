@@ -1,26 +1,71 @@
 .menu-top {
-  background-color: #8b4513; /* màu nâu tiệm sách */
-  color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #8b4513;
 }
 
-.menu-top .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.menu-top-logo {
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.menu-top .menu-links a {
-  color: #fff;
+.menu-top-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-top-nav li {
+  position: relative;
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu-top-nav a,
+.menu-top-nav span {
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  padding: 10px;
 }
 
-.menu-top .menu-links a:hover {
-  color: #ffd700; /* vàng khi hover */
+.menu-top-nav a:hover,
+.menu-top-nav span:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #7a3e0f;
+  min-width: 150px;
+  z-index: 1000;
+  border-radius: 6px;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown-content li a:hover {
+  background-color: #6a2e0f;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }

@@ -1,15 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../assets/css/MenuFront.css";
-import Logo from "../assets/images/mau-logo-nha-sach.jpg"; // import logo mới
 
-const MenuFront: React.FC = () => {
+const MenuFront = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="menu-front">
-      <img src={Logo} alt="Logo Tiệm Sách" className="logo-img" />
-      <button>Thể loại: Công nghệ</button>
-      <button>Thể loại: Văn học</button>
-      <button>Thể loại: Kinh tế</button>
-      <button>Thể loại: Thiếu nhi</button>
+      {/* Logo bằng chữ */}
+      <h1 className="logo-text" onClick={() => navigate("/")}>
+        📚Sách Tuấn📚
+      </h1>
+
+      {/* Nút chuyển trang theo thể loại */}
+      <button onClick={() => navigate("/cong-nghe")}>Công nghệ</button>
+      <button onClick={() => navigate("/van-hoc")}>Văn học</button>
+      <button onClick={() => navigate("/kinh-te")}>Kinh tế</button>
+      <button onClick={() => navigate("/thieu-nhi")}>Thiếu nhi</button>
     </div>
   );
 };

@@ -1,40 +1,43 @@
 .footer {
-  background-color: #8b4513; /* màu nâu */
-  color: #fff;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
+/* Phần trên của footer: logo + link */
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  border-bottom: 1px solid #fff;
+  padding: 20px 40px;
+  background-color: #8b4513; /* nâu nhạt */
 }
 
+/* Logo */
 .footer-logo-img {
-  height: 90px; /* chỉnh gọn logo */
+  height: 90px; /* gọn logo */
   width: auto;
-  border-radius: 80px; /* bo góc logo */
+  border-radius: 80px; /* bo góc */
+  object-fit: cover;
 }
 
+/* Link trong footer */
 .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
   font-weight: 500;
 }
 
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Phần dưới footer */
 .footer-bottom {
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 14px;
   background-color: #7a3e0f; /* nâu đậm hơn */
+  color: #fff;
 }
