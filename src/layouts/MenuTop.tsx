@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/MenuTop.css";
-import Logo from "../assets/images/mau-logo-nha-sach.jpg"; // ảnh logo của bạn
 
 const MenuTop: React.FC = () => {
   return (
     <header className="menu-top">
       {/* Logo bấm về trang chủ */}
-      <Link to="/">
-        <img src={Logo} alt="Logo Tiệm Sách" className="menu-top-logo" />
+      <Link to="/" className="menu-top-logo-link">
+        <img src="/images/mau-logo-nha-sach.jpg" alt="Logo Tiệm Sách" className="menu-top-logo" />
       </Link>
 
       {/* Menu chính */}

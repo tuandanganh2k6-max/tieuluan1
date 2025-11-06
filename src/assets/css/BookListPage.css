@@ -1,0 +1,20 @@
+.book-list-page {
+    padding: 30px;
+    background-color: #f7f3ef;
+    min-height: 80vh;
+  }
+  
+  .book-list-title {
+    text-align: center;
+    color: #8b4513;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

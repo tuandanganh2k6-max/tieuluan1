@@ -1,25 +1,20 @@
 import React from "react";
-import "../assets/css/Footer.css";
-import Logo from "../assets/images/mau-logo-nha-sach.jpg"; // ảnh logo mới
+import "../assets/css/MenuTop.css"; // css của bạn trong src/assets/css
 
-const Footer: React.FC = () => {
+const MenuTop: React.FC = () => {
   return (
-    <footer className="footer">
-      <div className="footer-top">
-        {/* Logo ảnh gọn, bo góc */}
-        <img src={Logo} alt="Logo Tiệm Sách Tuấn" className="footer-logo-img" />
-        <div className="footer-links">
-          <a href="#">Trang chủ</a>
-          <a href="#">Sản phẩm</a>
-          <a href="#">Liên hệ</a>
-          <a href="#">Giới thiệu</a>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        © 2025 Tiệm Sách Tuấn - All Rights Reserved
-      </div>
-    </footer>
+    <header className="menu-top">
+      <a href="/">
+        <img src="/images/mau-logo-nha-sach.jpg" alt="Logo Tiệm Sách" className="menu-top-logo" />
+      </a>
+      <nav className="menu-top-nav">
+        <a href="/cong-nghe">Công nghệ</a>
+        <a href="/van-hoc">Văn học</a>
+        <a href="/kinh-te">Kinh tế</a>
+        <a href="/thieu-nhi">Thiếu nhi</a>
+      </nav>
+    </header>
   );
 };
 
-export default Footer;
+export default MenuTop;
