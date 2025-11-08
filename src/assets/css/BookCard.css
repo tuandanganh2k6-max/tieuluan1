@@ -54,4 +54,10 @@
   .book-btn:hover {
     background-color: #6e3410;
   }
+  .book-card img {
+    width: 100%;
+    height: 320px;        /* giới hạn chiều cao ảnh */
+    object-fit: cover;    /* giúp ảnh tự co, không méo, không tràn */
+    display: block;
+  }
   

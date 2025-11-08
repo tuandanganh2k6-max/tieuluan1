@@ -32,4 +32,16 @@
 
 .menu-front-buttons button:hover {
   background-color: #a0522d;
+}.menu-front-logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8b4513; /* màu nâu chủ đạo */
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
 }
+
+.menu-front-logo-text:hover {
+  color: #d2691e; /* đổi sáng hơn khi hover */
+}
+

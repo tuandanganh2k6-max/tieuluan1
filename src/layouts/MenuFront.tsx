@@ -7,13 +7,13 @@ const MenuFront: React.FC = () => {
 
   return (
     <div className="menu-front">
-      {/* Logo ảnh (trong thư mục public) */}
-      <img
-        src="/images/mau-logo-nha-sach.jpg"
-        alt="Logo"
-        className="menu-front-logo"
-        onClick={() => navigate("/")}
-      />
+      <div
+  className="menu-front-logo-text"
+  onClick={() => navigate("/")}
+>
+  Tiệm Sách Tuấn 📚
+</div>
+
 
       {/* Các nút menu */}
       <div className="menu-front-buttons">
