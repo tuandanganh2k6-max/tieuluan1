@@ -1,29 +1,63 @@
 .menu-front {
-  background-color: #f2f2f2;
-  padding: 10px 20px;
+  background-color: #fdfdfd;
+  padding: 10px 0;
   display: flex;
-  align-items: center; /* canh logo và button cùng hàng */
-  gap: 15px;
-  border-bottom: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 2px solid #ddd;
 }
 
-.menu-front .logo-img {
-  height: 70px; /* chỉnh chiều cao logo */
-  width: auto;
-  border-radius: 50px; /* nếu muốn bo góc */
-}
-
-.menu-front button {
-  background-color: #fff;
-  border: 1px solid #8b4513;
-  padding: 8px 15px;
+.menu-front-logo {
+  height: 60px;
   cursor: pointer;
-  font-weight: 500;
-  border-radius: 4px;
-  transition: all 0.3s;
+  border-radius: 8px;
+  transition: transform 0.2s;
 }
 
-.menu-front button:hover {
+.menu-front-logo:hover {
+  transform: scale(1.05);
+}
+
+.menu-front-buttons button {
   background-color: #8b4513;
-  color: #fff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+.menu-front-buttons button:hover {
+  background-color: #a0522d;
+}
+.menu-front-logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8b4513; /* màu nâu chủ đạo */
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.menu-front-logo-text:hover {
+  color: #d2691e; /* đổi sáng hơn khi hover */
+}
+
+.menu-front {
+  background-color: #fdfdfd;
+  padding: 10px 0;
+  display: flex; /* Đã bật Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 25px; /* Tạo khoảng cách giữa các mục */
+  border-bottom: 2px solid #ddd;
+}
+.menu-front-buttons {
+  display: flex;
+  /* BẮT BUỘC: Thêm khoảng cách giữa các nút */
+  gap: 10px; /* Điều chỉnh giá trị này (ví dụ: 10px, 15px) */
+  align-items: center;
 }

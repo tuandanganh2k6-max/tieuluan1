@@ -1,0 +1,30 @@
+/* Toàn bộ trang chiếm đủ chiều cao màn hình */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Lớp bao ngoài App */
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Chiều cao tối thiểu bằng màn hình */
+  }
+  
+  /* Khu vực nội dung chính */
+  .main-content {
+    flex: 1; /* Chiếm toàn bộ phần còn lại */
+    background-color: #fffaf5;
+    padding: 20px;
+  }
+  
+  /* Footer luôn nằm cuối trang */
+  footer {
+    background-color: #8b4513;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Đẩy xuống đáy */
+  }
+  
