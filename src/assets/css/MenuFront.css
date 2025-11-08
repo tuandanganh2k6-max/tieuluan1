@@ -32,7 +32,8 @@
 
 .menu-front-buttons button:hover {
   background-color: #a0522d;
-}.menu-front-logo-text {
+}
+.menu-front-logo-text {
   font-size: 24px;
   font-weight: bold;
   color: #8b4513; /* màu nâu chủ đạo */
@@ -45,3 +46,18 @@
   color: #d2691e; /* đổi sáng hơn khi hover */
 }
 
+.menu-front {
+  background-color: #fdfdfd;
+  padding: 10px 0;
+  display: flex; /* Đã bật Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 25px; /* Tạo khoảng cách giữa các mục */
+  border-bottom: 2px solid #ddd;
+}
+.menu-front-buttons {
+  display: flex;
+  /* BẮT BUỘC: Thêm khoảng cách giữa các nút */
+  gap: 10px; /* Điều chỉnh giá trị này (ví dụ: 10px, 15px) */
+  align-items: center;
+}

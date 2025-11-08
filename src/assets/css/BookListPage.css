@@ -1,20 +1,47 @@
 .book-list-page {
-    padding: 30px;
-    background-color: #f7f3ef;
-    min-height: 80vh;
-  }
-  
-  .book-list-title {
-    text-align: center;
-    color: #8b4513;
-    margin-bottom: 25px;
-    font-size: 1.8em;
-    font-weight: bold;
-  }
-  
-  .book-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+  padding: 30px;
+  background-color: #f7f3ef;
+  min-height: 80vh;
+}
+
+.book-list-title {
+  text-align: center;
+  color: #8b4513;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* src/assets/css/BookListPage.css */
+
+/* ... (các style khác trong file này) ... */
+
+.book-list-grid {
+  display: grid; /* Kích hoạt chế độ lưới */
+
+  /* Tự động tạo các cột có chiều rộng tối thiểu là 250px và giãn ra hết mức có thể */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  /* Tạo khoảng cách giữa các thẻ sách */
+  gap: 20px;
+
+  /* Căn giữa toàn bộ lưới trên trang */
+  justify-content: center;
+
+  padding: 20px;
+  margin: 0 auto;
+  /* Giới hạn chiều rộng nếu cần, ví dụ: 90% chiều rộng màn hình */
+  max-width: 1200px;
+}
+
+/* Đảm bảo thẻ con không bị lỗi tràn */
+.book-card {
+  /* Giữ nguyên style này, nhưng nên bỏ 'margin: 15px;' trong .book-card 
+     vì đã có 'gap' trong grid, nếu không sẽ bị khoảng trắng dư thừa */
+  margin: 0; /* Sửa lại trong file BookCard.css */
+}
