@@ -75,3 +75,7 @@
   /* Bạn có thể bỏ width: 220px; ở đây vì grid đã kiểm soát chiều rộng (minmax) */
   width: 100%; /* Đặt 100% để grid kiểm soát */
 }
+.book-card-link {
+  text-decoration: none; /* Loại bỏ gạch chân cho link */
+  color: inherit; /* Giữ nguyên màu chữ của thẻ cha */
+}
