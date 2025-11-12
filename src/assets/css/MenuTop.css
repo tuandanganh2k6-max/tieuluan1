@@ -110,3 +110,67 @@
     margin-left: 5px;
     color: var(--menu-top-text);
 }
+/* src/assets/css/MenuTop.css */
+
+/* --- THÊM MÀU SẮC CHỨC NĂNG (Nút Đăng nhập/Giỏ hàng) --- */
+:root {
+  /* ... (giữ nguyên các biến màu nâu) ... */
+  --action-login-bg: #e67e22; /* Cam */
+  --action-cart-bg: #2ecc71;  /* Xanh lá */
+}
+
+
+/* 5. KHỐI CHỨC NĂNG (Đăng nhập, Giỏ hàng) */
+/* Đặt nó bên cạnh (hoặc sau) menu-top-nav */
+.menu-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa hai nút */
+  /* Margin-left: auto đã được đặt cho .menu-top-nav, 
+     nên khối này sẽ tự động nằm ngay sau nav và cách đều nav */
+  margin-left: 20px; /* Tạo thêm khoảng cách giữa nav và action buttons */
+}
+
+/* 6. CÁC NÚT HÀNH ĐỘNG (Đăng nhập, Giỏ hàng) */
+.menu-top-action-link {
+  /* Sử dụng lại các biến đã định nghĩa ở đầu */
+  color: var(--menu-top-text);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: opacity 0.3s, background-color 0.3s;
+  
+  /* Đảm bảo nút Giỏ hàng và Đăng nhập cũng có cùng chiều cao */
+  height: 100%; 
+  display: flex;
+  align-items: center;
+}
+
+/* Màu Nền riêng cho Nút Đăng nhập */
+.login-btn {
+  background-color: var(--action-login-bg);
+}
+
+/* Màu Nền riêng cho Nút Giỏ hàng */
+.cart-btn {
+  background-color: var(--action-cart-bg);
+}
+
+/* Hiệu ứng HOVER cho các nút chức năng */
+.menu-top-action-link:hover {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Đảm bảo nav và actions không bị logo lấn chỗ nếu logo quá lớn */
+/* Chúng ta đã dùng display: flex và justify-content: space-between cho .menu-top */
+/* Sửa lại .menu-top-nav để nó không chiếm quá nhiều không gian */
+.menu-top-nav {
+  /* Giữ nguyên: */
+  display: flex;
+  /* Thay đổi: */
+  margin-left: auto; /* Đẩy nav sang lề phải */
+  margin-right: 20px; /* Tạo khoảng cách giữa nav và actions */
+  gap: 5px; 
+}

@@ -1,19 +1,23 @@
+// src/layouts/MenuTop.tsx (Đã sửa)
+
 import React from "react";
 import { Link } from "react-router-dom";
-import "../assets/css/MenuTop.css";
+import "../assets/css/MenuTop.css"; 
 
 const MenuTop: React.FC = () => {
   return (
     <header className="menu-top">
-      {/* Logo bấm về trang chủ */}
+      
+      {/* ⬅️ LOGO bấm về trang chủ */}
       <Link to="/" className="menu-top-logo-link">
         <img src="/images/mau-logo-nha-sach.jpg" alt="Logo Tiệm Sách" className="menu-top-logo" />
       </Link>
 
-      {/* Menu chính */}
+      {/* MENU DANH MỤC SÁCH */}
       <nav className="menu-top-nav">
         
         {/* 1. MỤC CÔNG NGHỆ */}
+        {/* ... (Giữ nguyên cấu trúc Dropdown) ... */}
         <div className="menu-top-dropdown">
           <div className="menu-top-dropdown-link-dummy">
             Công nghệ 
@@ -27,6 +31,7 @@ const MenuTop: React.FC = () => {
         </div>
         
         {/* 2. MỤC VĂN HỌC */}
+        {/* ... (Giữ nguyên) ... */}
         <div className="menu-top-dropdown">
           <div className="menu-top-dropdown-link-dummy">
             Văn học 
@@ -40,6 +45,7 @@ const MenuTop: React.FC = () => {
         </div>
         
         {/* 3. MỤC KINH TẾ */}
+        {/* ... (Giữ nguyên) ... */}
         <div className="menu-top-dropdown">
           <div className="menu-top-dropdown-link-dummy">
             Kinh tế 
@@ -53,6 +59,7 @@ const MenuTop: React.FC = () => {
         </div>
 
         {/* 4. MỤC THIẾU NHI */}
+        {/* ... (Giữ nguyên) ... */}
         <div className="menu-top-dropdown">
           <div className="menu-top-dropdown-link-dummy">
             Thiếu nhi 
@@ -66,6 +73,21 @@ const MenuTop: React.FC = () => {
         </div>
         
       </nav>
+      
+      {/* 🚀 BỔ SUNG: PHẦN CHỨC NĂNG (Đăng nhập, Giỏ hàng) */}
+      <div className="menu-top-actions">
+        
+        {/* 1. NÚT ĐĂNG NHẬP */}
+        <Link to="/dang-nhap" className="menu-top-action-link login-btn">
+          👤 Đăng nhập
+        </Link>
+        
+        {/* 2. NÚT GIỎ HÀNG */}
+        <Link to="/gio-hang" className="menu-top-action-link cart-btn">
+          🛒 Giỏ hàng (0)
+        </Link>
+      </div>
+
     </header>
   );
 };
